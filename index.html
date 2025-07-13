@@ -1,89 +1,90 @@
 <!DOCTYPE html>
+<!--suppress JSUnresolvedLibraryURL -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/180741955" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="darkreader-lock" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/180741955"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock"/>
     <title>Splack</title>
-    <link rel="stylesheet" href="./static/styles/index.css" />
+    <link rel="stylesheet" href="./static/styles/index.css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <meta property="og:type" content="summary" />
-    <meta property="og:site_name" content="Splack" />
-    <meta property="og:title" content="Splack" />
-    <meta property="og:description" content="Not much to see here (for now)" />
+    <meta property="og:type" content="summary"/>
+    <meta property="og:site_name" content="Splack"/>
+    <meta property="og:title" content="Splack"/>
+    <meta property="og:description" content="Not much to see here (for now)"/>
     <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/180741955"
+            property="og:image"
+            content="https://avatars.githubusercontent.com/u/180741955"
     />
-    <meta property="og:image:alt" content="Splack" />
-    <meta property="og:url" content="https://splack.is-a.dev/" />
-  </head>
-  <body class="dark-mode">
-    <div class="theme-switch">
-      <i class="fas fa-moon" id="theme-icon"></i>
-    </div>
+    <meta property="og:image:alt" content="Splack"/>
+    <meta property="og:url" content="https://splack.is-a.dev/"/>
+</head>
+<body class="dark-mode">
+<div class="theme-switch">
+    <i class="fas fa-moon" id="theme-icon"></i>
+</div>
 
-    <div class="container">
-      <div class="content">
+<div class="container">
+    <div class="content">
         <div class="logo">
-          <img
-            src="https://avatars.githubusercontent.com/u/180741955"
-            alt="Splack Logo"
-          />
+            <img
+                    src="https://avatars.githubusercontent.com/u/180741955"
+                    alt="Splack Logo"
+            />
         </div>
         <h1 class="title">Work in Progress</h1>
         <p class="subtitle">Something awesome is coming soon!</p>
 
         <div class="cta-box">
-          <p>Meanwhile, check out my projects:</p>
-          <a
-            href="https://github.com/splack01/1.21Optimized"
-            class="project-link"
-          >
-            <i class="fab fa-github"></i>
-            1.21 Optimized
-          </a>
+            <p>Meanwhile, check out my projects:</p>
+            <a
+                    href="https://github.com/splack01/1.21Optimized"
+                    class="project-link"
+            >
+                <i class="fab fa-github"></i>
+                1.21 Optimized
+            </a>
         </div>
 
         <div class="social-links">
-          <a href="https://github.com/splack01" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
+            <a href="https://github.com/splack01" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-      </div>
     </div>
+</div>
 
-    <footer class="copyright">
-      <p>&copy; <span id="current-year"></span> Splack. All rights reserved.</p>
-    </footer>
+<footer class="copyright">
+    <p>&copy; <span id="current-year"></span> Splack. All rights reserved.</p>
+</footer>
 
-    <script>
-      document.getElementById("current-year").textContent =
+<script>
+    document.getElementById("current-year").textContent =
         new Date().getFullYear();
 
-      const themeSwitch = document.querySelector(".theme-switch");
-      const themeIcon = document.getElementById("theme-icon");
-      const body = document.body;
+    const themeSwitch = document.querySelector(".theme-switch");
+    const themeIcon = document.getElementById("theme-icon");
+    const body = document.body;
 
-      function toggleTheme() {
+    function toggleTheme() {
         if (body.classList.contains("dark-mode")) {
-          body.classList.remove("dark-mode");
-          body.classList.add("light-mode");
-          themeIcon.classList.remove("fa-moon");
-          themeIcon.classList.add("fa-sun");
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
         } else {
-          body.classList.remove("light-mode");
-          body.classList.add("dark-mode");
-          themeIcon.classList.remove("fa-sun");
-          themeIcon.classList.add("fa-moon");
+            body.classList.remove("light-mode");
+            body.classList.add("dark-mode");
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
         }
-      }
+    }
 
-      themeSwitch.addEventListener("click", toggleTheme);
-    </script>
-  </body>
+    themeSwitch.addEventListener("click", toggleTheme);
+</script>
+</body>
 </html>
